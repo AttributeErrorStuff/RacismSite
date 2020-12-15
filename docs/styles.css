@@ -1,50 +1,71 @@
-html, body {
+html {
     background: grey;
-    color: white;
-    font-family: Roboto;
 }
 
-header {
-    background: rgb(65,65,65);
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-family: Roboto;
+    font-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .navbar {
-    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgb(70,70,70);
+    width: 125%;
+    height: 8.5vmin;
+    overflow: hidden;
+}
+
+p {
+    color: rgb(230,230,230);
+}
+
+@keyframes changeCol {
+    from {background-color: rgb(70,70,70); color: white;}
+    to { background-color: white; color: black; }
+}
+
+@keyframes hoverEnd {
+    from { background-color: white; color: black; }
+    to {background-color: rgb(70,70,70); color: white;}
+}
+
+li {
+    display: inline;
+    padding-left: 5vmin;
+    padding: 3vmin;
+    font-size: 2.5vmin;
     height: 8vmin;
-    font-size: 3.5vmin;
-    background: rgb(65,65,65);
-}
-
-.navlist {
-    height: 8vmin;
-}
-
-@keyframes navhoverb {
-    from { background: grey; color: white; }
-    to { background-color: white; color: rgb(65,65,65); }
-}
-
-@keyframes navhovere {
-    to { background: grey; color: white; }
-    from { background-color: white; color: rgb(65,65,65); }
+    text-align: center;
 }
 
 .navitem {
-    animation-name: navhovere;
+    animation-name: hoverEnd;
     animation-duration: 0.25s;
-    /*----ANIM-SETUP----*/
-    cursor: pointer;
+
     display: inline;
-    text-align: center;
-    height: 8vmin;
-    background: rgb(65,65,65);
-    color: white;
+    padding-left: 5vmin;
+    padding: 4vmin;
 }
 
 .navitem:hover {
-    animation-name: navhoverb;
+    color: black;
+    cursor: pointer;
+    animation-name: changeCol;
     animation-duration: 0.25s;
-    /*----ANIM-SETUP----*/
     background-color: white;
-    color: rgb(65,65,65);
+    color: black;
+}
+
+.infotable {
+    background: none;
 }
