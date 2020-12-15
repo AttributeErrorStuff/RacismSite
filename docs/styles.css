@@ -5,13 +5,14 @@ html, body {
 }
 
 header {
-    color: rgb(65,65,65);
+    background: rgb(65,65,65);
 }
 
 .navbar {
     width: 100%;
     height: 8vmin;
     font-size: 3.5vmin;
+    background: rgb(65,65,65);
 }
 
 .navlist {
@@ -32,8 +33,12 @@ header {
     animation-name: navhovere;
     animation-duration: 0.25s;
     /*----ANIM-SETUP----*/
-    cursor: poniter;
+    cursor: pointer;
     display: inline;
+    text-align: center;
+    height: 8vmin;
+    background: rgb(65,65,65);
+    color: white;
 }
 
 .navitem:hover {
