@@ -7,7 +7,8 @@ html, body {
 }
 
 .navbar {
-    background: rgb(70,70,70);
+    background: #574c4f;
+    color: white;
     position: fixed;
     top: 0;
     height: 8vmin;
@@ -16,13 +17,13 @@ html, body {
 }
 
 @keyframes navitemhover {
-    from { background: rgb(70,70,70); color: white; }
-    to { background: white; color: rgb(70,70,70); }
+    from { background: #574c4f; color: white; }
+    to { background: white; color: #574c4f; }
 }
 
 @keyframes navitemhoverend {
-    from { background: white; color: rgb(70,70,70); }
-    to { background: rgb(70,70,70); color: white; }
+    to { background: #574c4f; color: white; }
+    from { background: white; color: #574c4f; }
 }
 
 .navitem {
@@ -39,7 +40,7 @@ html, body {
     animation-name: navitemhover;
     animation-duration: 0.25s;
     background: white;
-    color: rgb(70,70,70);
+    color: #574c4f;
 }
 
 #navul {
