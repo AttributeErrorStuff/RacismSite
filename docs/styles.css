@@ -1,14 +1,14 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: grey;
+    background: #343233;
     font-family: Roboto;
     color: white;
 }
 
 .navbar {
-    background: #574c4f;
     color: white;
+    background: #574c4f;
     position: fixed;
     top: 0;
     height: 8vmin;
