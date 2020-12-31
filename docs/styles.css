@@ -51,9 +51,10 @@ html, body {
 .hometitle {
     position: fixed;
     top: 15vmin;
-    width: 100%;
+    width: 80%;
     text-align: center;
-    font-size: 5vmin;
+    font-size: 4vmin;
+    left: 10%;
 }
 
 .homeinfo {
