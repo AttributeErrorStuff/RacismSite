@@ -61,6 +61,7 @@ html, body {
     top: 25vmin;
     left: 5vmin;
     font-size: 3.5vmin;
+    text-indent: 4vmin;
 }
 
 #forumdisp {
